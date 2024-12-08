@@ -1,0 +1,20 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2 id="titleContact">{{ title }}</h2>
+
+<div class="adressinfo">
+    <address>
+        <div><u>Адрес</u>:          г. Псков ул. Ивано Головко, д. 10</div><br />
+        <div><u>Телефон Доверия</u>:        75-22-22</div> <br />
+        <div><u>Email</u>:          @svcpskov.com</div>
+    </address>
+
+    <address class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f1c08ec127593ccaa1561e90c8d99d1b1cc7ea7f6ede154f3d0ab98871a0690&amp;source=constructor" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </address>
+</div>
+
+{% endblock %}

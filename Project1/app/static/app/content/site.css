@@ -1,0 +1,259 @@
+body {
+    padding-top: 120px; /* Отступ сверху */
+    padding-bottom: 20px; /* Отступ снизу */
+    background-color: #e0aead; /* Цвет фона */
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s, font-size 0.3s;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #530201;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.ico {
+    width: 350px;
+    margin-bottom: 35px;
+}
+
+.block-links {
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.block-links .org {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.block-about p {
+    font-size: 22px;
+    line-height: 160%;
+}
+
+.block-about h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.hrline {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-top: 2px solid rgb(0,0,0);
+}
+
+.navbar-nav {
+    padding: 0; /* Внутренние отступы */
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    margin-bottom: 5px; /* Отступ снизу */
+    margin-top: 35px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.navbar-brand {
+    padding-bottom: 0;
+    
+}
+
+.navbar-right,
+.navbar-right .navbar-brand {
+    font-size: 12px;
+}
+
+.block-about p {
+    font-size: 22px;
+    line-height: 160%;
+
+}
+
+.block-about h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cons {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cons .cell {
+        padding: 15px;
+        height: 500px;
+        font-size: 19px;
+}
+
+#titleAbout {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+#titleContact {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.img class {
+    margin-bottom: 500px;
+}
+
+.adressinfo {
+    font-size: 22px;
+    
+}
+
+.map {
+    position: absolute; /* Позволяет позиционировать элемент относительно родительского контейнера */
+    top: 125px; /* Отступ сверху */
+    right: 150px; /* Отступ справа */
+    padding: 10px; /* Внутренние отступы */
+    background-color: #b94a48; /* Цвет фона карты (если необходимо) */
+    border: 1px solid #ccc; /* Граница карты (если необходимо) */
+    border-radius: 5px; /* Закругленные углы (если необходимо) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для карты (если необходимо) */
+}
+
+.navbar-fixed-top {
+    background-color: #9a475e;
+}
+
+
+
+h1 {
+    position: relative;
+    font-size: 67px;
+    font-weight: 750;
+    margin-top: 60px;
+    float: right;
+    right: 715px;
+}
+
+.lead {
+    position: relative;
+    margin-top: 45px;
+    font-size: 25px;
+    float: right;
+    right: 550px;
+    font-weight: 650;
+}
+
+.btn {
+    background-color: #a00426;
+    padding: 20px 35px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    position: relative;
+    margin-top: 230px;
+    float: right;
+    right: 260px;
+    transition: background-color 0.3s linear;
+}
+
+.btn:hover {
+        background-color: #9a475e;
+}
+
+#myCarousel {
+    width: 600px; /* Устанавливаем ширину карусели */
+    height: 550px; /* Устанавливаем высоту карусели */
+    position: absolute; /* Позволяет позиционировать элемент */
+    top: 130px; /* Располагаем в верхней части экрана */
+    right: 80px; /* Располагаем в правой части экрана */
+    overflow: hidden; /* Скрываем переполнение */
+}
+
+.carousel-inner img {
+    width: 100%; /* Изображения занимают всю ширину карусели */
+    height: auto; /* Высота автоматически подстраивается */
+    max-height: 600px; /* Ограничиваем максимальную высоту изображений */
+}
+
+.carousel-caption {
+    color: #ccc; /* Устанавливаем цвет текста на черный */
+    background-color: rgba(50, 50, 50, 0.7); /* Полупрозрачный фон для лучшей читаемости текста */
+}
+
+.centered-image {
+    display: block; /* Устанавливаем блочный элемент для центрирования */
+    margin: 10px auto; /* Центрируем изображение с отступом сверху и снизу */
+    width: 600px; /* Устанавливаем ширину изображения */
+    height: auto; /* Высота автоматически подстраивается */
+}
+
+.postpic {
+    width: 650px;
+    margin-bottom: 45px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.blockpp {
+    text-align: center;
+}
+
+.postpic {
+    min-width: 320px;
+    width: 50%;
+}
+
+.blogpost h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+h5 {
+    color: #1c4f9c;
+}
+
+
+video {
+    position: absolute; /* Позволяет позиционировать элемент */
+    top: 200px;
+    left: 190px;
+    width: 800px; /* Устанавливаем ширину видео */
+    height: auto; /* Высота автоматически подстраивается */
+}
+

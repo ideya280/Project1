@@ -1,0 +1,46 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+{% block content %}
+
+<h2 id="titleLinks">{{ title }}</h2>
+<div class="block-links">
+    <ol>
+        <li>
+            <div class="org">
+                <a href="https://telefon-doveria.ru" target="_blank"> <img src="{% static 'app/content/logo1.jpg' %}" alt="Logo 1" width="75" /></a>
+                <a class="orgname" href="https://telefon-doveria.ru">Телефон Доверия</a><br />
+                <span>
+                    Единый детский телефон доверия для всех регионов России.
+                    Профессиональные психологи готовы выслушать и помочь каждому.
+                    Анонимность и конфиденциальность гарантированы.
+                    Поддержка в сложных жизненных ситуациях: проблемы в семье, 
+                    трудности в воспитании детей, личные переживания.
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="org">
+                <a href="https://sisters-help.ru" target="_blank"> <img src="{% static 'app/content/logo2.jpg' %}" alt="Logo 2" width="75" /></a>
+                <a class="orgname" href="https://sisters-help.ru">Центр Сестры</a><br />
+                <span>
+                    Центр Сестры помогаем всем пережившим сексуализированное насилие, 
+                    домогательства и другие формы сексуализированного насилия, 
+                    независимо от того, с кем, когда и при каких обстоятельствах это произошло.
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="org">
+                <a href="http://iswc.ru" target="_blank"> <img src="{% static 'app/content/logo3.png' %}" alt="Logo 3" width="75" /></a>
+                <a class="orgname" href="http://iswc.ru">Независимый социальный женский центр Псков</a><br />
+                <span>
+                    «Независимый социальный женский центр» – это общественная организация. 
+                    Наша основная задача – помогать людям, находящимся в трудной жизненной
+                    ситуации, пострадавшим от насилия.
+                </span>
+            </div>
+        </li>
+    </ol>
+</div>
+
+{% endblock %}

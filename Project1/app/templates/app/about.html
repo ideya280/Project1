@@ -1,0 +1,83 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+{% block content %}
+
+<h2 id="titleAbout">{{ title }}</h2>
+
+<div class="block-about">
+    <div class="block-about header">
+        <p>
+            <strong>"Женский центр"</strong> -
+            <em>
+                негосударственная, некоммерческая
+                общественная организация, созданная в апреле 1995 года в г. Пскове.
+
+            </em>
+            Цель центра: добиться позитивных изменений в улучшении
+            положения женщин.
+        </p>
+        
+    </div>
+
+    <img src="{% static 'app/content/pic.logo.jpg' %}" alt="112" class="centered-image" />
+
+    <hr class="hrline">
+
+    <h2>Эта цель достигается через:</h2>
+
+    <div class="row cons">
+        <div class="col-md-4 cell">
+            <div><img class="ico" src="{% static 'app/content/Психолог.png' %}" alt="" /></div>
+            <strong><ins>Психологическая помощь</ins></strong><br>
+            На консультации вместе со специалистом, вы сможете обсудить,
+            что с вами происходит, проанализировать свое состояние.
+        </div>
+        <div class="col-md-4 cell">
+            <div><img class="ico" src="{% static 'app/content/Адвокат.png' %}" alt="" /></div>
+            <strong><ins>Юридическая помощь</ins></strong><br>
+            Оказание помощи в составлении документов в суд и другие
+            инстанции, Юридическое консультирование, Представление
+            интересов в суде.
+
+        </div>
+        <div class="col-md-4 cell">
+            <div><img class="ico" src="{% static 'app/content/Детский психолог.png' %}" alt="" /></div>
+            <strong><ins>Детская психологическая консультация</ins></strong><br>
+            Мы знаем, как непросто взрослым и детям справляться с
+            трудными ситуациями. Порой в жизни ребёнка возникают
+            моменты, когда поддержка специалиста становится особенно важной.
+        </div>
+    </div>
+
+    <div class="row cons">
+        <div class="col-md-4 cell">
+            <div><img class="ico" src="{% static 'app/content/Тренинг.png' %}" alt="" /></div>
+            <strong><ins>Тренинги «ProРесурс»</ins></strong><br>
+            Мы создали цикл занятий «ProРесурс» , чтобы помочь освоить навыки,
+            необходимые для улучшения своей самооценки и приобретения позитивного
+            отношения к себе и своим достижениям.
+        </div>
+        <div class="col-md-4 cell">
+            <div><img class="ico" src="{% static 'app/content/Новости.png' %}" /></div>
+            <strong><ins>Новости</ins></strong><br>
+            В нашей группе ВКонтакте и Telegram-канале публикуются информационные
+            статьи, посвященные темам домашнего и сексуализированного насилия, а
+            также много чего полезного.
+        </div>
+        <div class="col-md-4 cell">
+            <div><img class="ico" src="{% static 'app/content/Акция.png' %}" alt="" /></div>
+            <strong><ins>Благотворительные акции</ins></strong><br>
+            Мы организуем мероприятия, которые помогают привлечь внимание к
+            проблеме и собрать средства для оказания помощи нуждающимся.
+        </div>
+    </div>
+
+
+    <hr class="hrline">
+    <p>
+        Центр постоянно ведет работу по поиску партнеров. Мы всегда рады новым
+        встречам, новым знакомствам и новым друзьям.
+    </p>
+</div>
+
+{% endblock %}
